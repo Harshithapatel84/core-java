@@ -5,4 +5,8 @@ class Sugar{
 	{
 		this.spoon=spoon;
 	}
+	void showData()
+	{
+		System.out.println("spoon:"+this.spoon);
+	}
 }

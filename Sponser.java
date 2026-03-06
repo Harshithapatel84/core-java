@@ -5,4 +5,8 @@ class Sponser{
 	{
 		this.sName=sName;
 	}
+	void printDetails()
+	{
+		System.out.println("sponsers name:"+this.sName);
+	}
 }

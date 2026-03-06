@@ -1,14 +1,11 @@
 class Stadium{
-	String type;
-	int seatingCapacity;
+	String location;
 	
-	Stadium(String type)
-	{
-		this.type=type;
+	Stadium(String location){
+		this.location=location;
 	}
-	Stadium (String type,int seatingCapacity)
+	void showData()
 	{
-		this.type=type;
-		this.seatingCapacity=seatingCapacity;
+		System.out.println("location:"+this.location);
 	}
 }

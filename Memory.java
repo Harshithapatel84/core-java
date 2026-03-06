@@ -5,5 +5,9 @@ class Memory{
 	{
 		this.size=size;
 	}
+	void printDetails()
+	{
+		System.out.println("size:"+this.size);
+	}
 	
 }

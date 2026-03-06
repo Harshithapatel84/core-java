@@ -25,4 +25,27 @@ class Spa{
         this.music=music;
         this.payment=payment;
     }
+	void display()
+	{
+		System.out.println("price:"+price+",open:"+this.open+",loction:"+this.location+",luxuryService:"+this.luxuryService+",staffCount:"+this.staffCount);
+		if(this.massage!=null)
+		{
+		this.massage.getInfo();
+		}
+		if(this.oil!=null)
+		{this.oil.getDetails();
+		}
+		if(music!=null)
+		{
+			this.music.showData();
+		}
+		if(this.payment!=null)
+		{
+			this.payment.details();
+		}
+		if(customer!=null)
+		{
+			this.customer.printData();
+		}
+	}
 }

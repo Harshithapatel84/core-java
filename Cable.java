@@ -5,4 +5,8 @@ class Cable{
 	{
 		this.length=length;
 	}
+	void getInfo()
+	{
+		System.out.println("length:"+this.length);
+	}
 }

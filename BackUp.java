@@ -7,4 +7,8 @@ class BackUp{
 		this.backupAvailabe=backupAvailabe;
 		this.backUpDate=backUpDate;
 	}
+	void getDetails()
+	{
+		System.out.println("backUp available:"+this.backupAvailabe+",backUp data:"+this.backUpDate);
+	}
 }

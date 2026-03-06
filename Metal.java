@@ -5,4 +5,8 @@ class Metal{
 	{
 		this.material=material;
 	}
+	void getDetails()
+	{
+		System.out.println("made by:"+this.material);
+	}
 }

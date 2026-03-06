@@ -4,4 +4,8 @@ class Training{
     Training(int hour){
         this.hour= hour;
     }
+	void printDetails()
+	{
+		System.out.println("training hours:"+this.hour);
+	}
 }

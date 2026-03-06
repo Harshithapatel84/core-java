@@ -25,5 +25,8 @@ class File{
 		this.permission=permission;
 	}
 	
-	
+	void getInfo()
+	{
+		System.out.println("file name:"+this.name+",size:"+this.size+",storage:"+this.storage+",space:"+this.space+",userId:"+this.userId);
+	}
 }

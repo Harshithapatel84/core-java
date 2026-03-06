@@ -5,4 +5,8 @@ class CoolingFan{
 	{
 		this.fan=fan;
 	}
+	void details()
+	{
+		System.out.println("coolingFan:"+this.fan);
+	}
 }

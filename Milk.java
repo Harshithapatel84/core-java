@@ -5,4 +5,8 @@ class Milk{
 	{
 		this.added=added;
 	}
+	void getDetails()
+	{
+		System.out.println("milk:"+this.added);
+	}
 }

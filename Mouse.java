@@ -24,4 +24,8 @@ class Mouse{
 		this.cursor=cursor;
 		this.chip=chip;
 	}
+	void displayDetials()
+	{
+		System.out.println("brand:"+this.brand+",price:"+this.price+",drag:"+this.drag+",manufacture:"+this.manufacture+",no of mouse:"+noOfMouse);
+	}
 }

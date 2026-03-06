@@ -5,4 +5,9 @@ class Customer{
 	{
 		this.name=name;
 	}
+	
+	void printData()
+	{
+		System.out.println("name:"+this.name);
+	}
 }

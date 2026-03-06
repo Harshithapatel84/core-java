@@ -5,4 +5,8 @@ class Leaf{
 	{
 		this.type=type;
 	}
+	void printData()
+	{
+		System.out.println("type:"+this.type);
+	}
 }

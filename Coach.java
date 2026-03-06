@@ -23,4 +23,28 @@ class Coach{
         this.assistant = assistant;
         this.contract = contract;
     }
+	void getInfo()
+	{
+		System.out.println("coach age:"+this.age+",salary:"+this.salary+",is experienced:"+this.experienced+",sport:"+this.sport+",is international:"+this.international);
+		if(this.team!=null)
+		{
+			this.team.getDetails();
+		}
+		if(this.strategy!=null)
+		{
+			this.strategy.showData();
+		}
+		if(this.training!=null)
+		{
+			this.training.printDetails();
+		}
+		if(this.assistant!=null)
+		{
+			this.assistant.getInfo();
+		}
+		if(this.contract!=null)
+		{
+			this.contract. info();
+		}
+	}
 }

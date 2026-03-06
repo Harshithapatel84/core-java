@@ -5,4 +5,8 @@ class Payment{
 	{
 		this.amount=amount;
 	}
+	void details()
+	{
+		System.out.println("cost:"+this.amount);
+	}
 }

@@ -24,4 +24,29 @@ class Lion{
         this.heart = heart;
         this.food = food;
     }
+	void getInfo()
+	{
+		System.out.println("lion age:"+this.age+",weight:"+this.weight+",gender:"+this.male+",habitat:"+this.habitat+",nonVeg:"+this.nonVeg);
+		if(this.cave!=null)
+		{
+			this.cave.display();
+		}
+		if(this.tail!=null)
+		{
+			this.tail.getDetails();
+		}
+		if(this.leg!=null)
+		{
+			this.leg.showData();
+		}
+		if(this.heart!=null)
+		{
+			this.heart.printData();
+		}
+		if(food!=null)
+		{
+			this.food.getDetails();
+		}
+	
+	}
 }

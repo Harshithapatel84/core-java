@@ -5,4 +5,8 @@ class Wire{
 	{
 		this.color=color;
 	}
+	void display()
+	{
+		System.out.println("color:"+this.color);
+	}
 }

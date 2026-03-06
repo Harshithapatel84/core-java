@@ -4,4 +4,8 @@ class Shaft{
 	{
 		this.noOfShaft=noOfShaft;
 	}
+	void getDetails()
+	{
+		System.out.println("no of shaft:"+this.noOfShaft);
+	}
 }

@@ -5,4 +5,8 @@ class Gear{
 	{
 		this.noOfGear=noOfGear;
 	}
+	void getInfo()
+	{
+		System.out.println("no of gear:"+this.noOfGear);
+	}
 }

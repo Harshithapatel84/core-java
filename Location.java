@@ -7,4 +7,8 @@ class Location{
 	  this.path=path;
       this.driveName=driveName;	  
 	}
+	void getInfo()
+	{
+		System.out.println("location:"+this.path+",drive name:"+this.driveName);
+	}
 }

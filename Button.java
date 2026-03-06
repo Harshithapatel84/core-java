@@ -7,7 +7,7 @@ class Button{
 		this.noOfButton=noOfButton;
 		this.color=color;
 	}
-	void display()
+	void displayInfo()
 	{
 		System.out.println("number of button in mouse:"+this.noOfButton);
 		System.out.println("color:"+this.color);

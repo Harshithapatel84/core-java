@@ -25,4 +25,33 @@ class Tea{
         this.leaf=leaf;
         this.vessel=vessel;
     }
+	void display()
+    {
+        System.out.println("price:"+price+",hot:" +hot + ", flavor:" + flavor +", quantity:" + quantity + ", organic:" + organic);
+
+        if(this.cup!=null)
+        {
+            this.cup.getInfo();
+        }
+
+        if(this.milk!=null)
+        {
+            this.milk.getDetails();
+        }
+
+        if(this.sugar!=null)
+        {
+            this.sugar.showData();
+        }
+
+        if(this.leaf!=null)
+        {
+            this.leaf.printData();
+        }
+
+        if(this.vessel!=null)
+        {
+            this.vessel.displayShop();
+        }
+    }
 }

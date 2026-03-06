@@ -4,4 +4,8 @@ class Food{
     Food(String type){
         this.type = type;
     }
+	void getDetails()
+	{
+		System.out.println("food is:"+this.type);
+	}
 }
