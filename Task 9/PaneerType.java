@@ -1,0 +1,4 @@
+enum PaneerType
+{
+	CUBES,GRATED,SMOKED,SPICED
+}
