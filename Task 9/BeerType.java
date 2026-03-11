@@ -1,4 +1,0 @@
-enum BeerType
-{
-	LIGHT,STRONG,CRAFT,WHEAT
-}

@@ -1,4 +1,0 @@
-enum FlavorType
-{
-	MOTHERS,CHACOLATE,WOMENS,PROTEIN_PLUS
-}
