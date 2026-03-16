@@ -28,4 +28,32 @@ class StoreModel{
 		}
 		
 	}
+	boolean search(String model)
+	{
+		System.out.println("executing the search in model store...");
+		if(model!=null)
+		{
+			System.out.println("model is not null");
+			if(this.models!=null)
+			{
+				for(String tempModel:this.models)
+				{
+					if(tempModel == model)
+					{
+					System.out.println("model:"+tempModel);
+					return true;
+					}
+				}
+			}
+			else
+			{
+				System.out.println("Array is null");
+			}
+		}
+		else
+		{
+			System.out.println("model is null:");
+		}
+		return false;
+	}
 }

@@ -6,8 +6,15 @@ class CompanyNameRunner{
 		companyName.store("IOCL");
 		companyName.store("BPCL");
 		companyName.store("RIL");
-		companyName.store("Nayara ");
+		companyName.store("Nayara");
 		companyName.store("Shell India");
+		
+		System.out.println("=======================================================");
+		
+		boolean found= companyName.search("RIL");
+		System.out.println("name found:"+found);
+		
+		System.out.println("=======================================================");
 		
 		String[] singer=new String[20];
 		SingerName name=new SingerName(singer); 
@@ -31,6 +38,13 @@ class CompanyNameRunner{
 		name.save("yesudas");
 		name.save("hemanth");
 		name.save("chandan shetty");
+		
+		System.out.println("=======================================================");
+		
+		boolean foundName=name.search("vijay prakash");
+		System.out.println("name found:"+foundName);
+		
+		System.out.println("=======================================================");
 		
 		String[] model=new String[50];
 		StoreModel storeModel=new StoreModel(model);
@@ -84,6 +98,11 @@ class CompanyNameRunner{
 		storeModel.storeData("Suzuki Burgman Street");
 		storeModel.storeData("Suzuki Avenis 125");
 		storeModel.storeData("Suzuki Hayabusa");
+		
+		System.out.println("=================================================");
+		
+		boolean foundModel=storeModel.search("Honda SP 125");
+		System.out.println("name found:"+foundModel);
 		
 	}
 }

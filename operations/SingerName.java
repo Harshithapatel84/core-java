@@ -29,4 +29,34 @@ class SingerName{
 			System.out.println("array cannot be.................");
 		}
 	}
+	
+	boolean search(String name)
+	{
+		System.out.println("executing the search.................");
+		if(name!=null)
+		{
+			System.out.println("name is not null");
+			if(this.musicians!=null)
+			{
+				for(String tempName:this.musicians)
+				{
+					System.out.println("comparing with:"+tempName);
+					if(tempName == name)
+					{
+					 System.out.println("name:"+tempName);
+				     return true;
+					}
+				}
+			}
+			else
+			{
+				System.out.println("name is null..");
+			}
+		}
+		else
+		{
+			System.out.println("name is not found..");
+		}
+		return false;
+	}
 }
