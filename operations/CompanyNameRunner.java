@@ -9,10 +9,30 @@ class CompanyNameRunner{
 		companyName.store("Nayara");
 		companyName.store("Shell India");
 		
-		System.out.println("=======================================================");
+		System.out.println("-------------------------------------------------------");
 		
 		boolean found= companyName.search("RIL");
 		System.out.println("name found:"+found);
+		
+		System.out.println("-------------------------------------------------------");
+		boolean update=companyName.update(2,"HPCL");
+		System.out.println(update);
+		
+		System.out.println("-----------------------------------------------");
+		
+		boolean updateName=companyName.updateNewName("Nayara","ONGC");
+		System.out.println(updateName);
+		
+		System.out.println("-----------------------------------------------");
+		 
+		boolean delete=companyName.delete(4,"Shell India");
+	    System.out.println(delete);
+		 
+		System.out.println("-----------------------------------------------");
+		 
+        boolean deleteName=companyName.deleteByName("RIL");
+		System.out.println(deleteName);
+		
 		
 		System.out.println("=======================================================");
 		
@@ -39,10 +59,30 @@ class CompanyNameRunner{
 		name.save("hemanth");
 		name.save("chandan shetty");
 		
-		System.out.println("=======================================================");
+		System.out.println("-------------------------------------------------------");
 		
 		boolean foundName=name.search("vijay prakash");
 		System.out.println("name found:"+foundName);
+		
+		System.out.println("-------------------------------------------------------");
+		
+		boolean updateNameByNmae=name.update(8,"Laths Mangeshkar");
+		System.out.println(updateNameByNmae);
+		
+		System.out.println("-----------------------------------------------");
+		
+		boolean updateOldName=name.updateNewName("sonu nigam","Asha Bhosle");
+		System.out.println(updateOldName);
+		
+		System.out.println("-----------------------------------------------");
+		 
+		 boolean deleteByIndex=name.delete(10,"arman malik");
+		 System.out.println(deleteByIndex);
+		 
+		System.out.println("-----------------------------------------------");
+		 
+        boolean deleteName1=name.deleteByName("Justin Bieber");
+		System.out.println(deleteName1);
 		
 		System.out.println("=======================================================");
 		
@@ -99,10 +139,28 @@ class CompanyNameRunner{
 		storeModel.storeData("Suzuki Avenis 125");
 		storeModel.storeData("Suzuki Hayabusa");
 		
-		System.out.println("=================================================");
+		System.out.println("-------------------------------------------------------");
 		
 		boolean foundModel=storeModel.search("Honda SP 125");
 		System.out.println("name found:"+foundModel);
+		
+		boolean updateNameByName=storeModel.update(14,"KTM");
+		System.out.println(updateNameByName);
+		
+		System.out.println("-----------------------------------------------");
+		
+		boolean updateOld=storeModel.updateNewName("yamaha R15","Bajaj Pulsar");
+		System.out.println(updateOld);
+		
+		System.out.println("-----------------------------------------------");
+		 
+		 boolean deleteByIndex1=storeModel.delete(12,"honda shine");
+		 System.out.println(deleteByIndex1);
+		 
+		System.out.println("-----------------------------------------------");
+		 
+        boolean deleteName2=storeModel.deleteByName("TVS Ronins");
+		System.out.println(deleteName2);
 		
 	}
 }
