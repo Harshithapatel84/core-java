@@ -4,7 +4,7 @@ class ProductRunner{
 		Product[] product=new Product[137];
 		StoreProductDetail prDetail=new StoreProductDetail(product);
 		
-		Product item = new Product("Mixer",15-06-26,35000,"Ambhasutha",false,"MX154","china",
+		Product item = new Product("Mixer",15-6-26,35000,"Ambhasutha",false,"MX154","china",
 		ProductType.ELECTRIC_ITEMS,WarrantyYear.TWO);
 		Product item1 = new Product("cloth",26,500,"Ajio",true,"Ajio45","india",
 		ProductType.CLOTH,WarrantyYear.ONE);
@@ -23,7 +23,7 @@ class ProductRunner{
 		Product item7 = new Product("PhotoFrame",25,35000,"Ambhasutha",false,"12","india",
 		ProductType.ACCESSERIES,WarrantyYear.ONE);
 		Product item8 = new Product("Air cooler",28-06-26,35000,"Ambhasutha",false,"A10","USA",
-		ProductType.ELECTRIC_ITEMS,WarrantyYear.THREE);
+		ProductType.ELECTRIC_ITEMS,WarrantyYear.TWO);
 		
 		prDetail.save(item);
 		prDetail.save(item1);
@@ -247,6 +247,62 @@ class ProductRunner{
 		Product item110 = new Product("Silver Anklet",28,9000,"GRT",false,"SA76","india",
         ProductType.JEWELLERY,WarrantyYear.THREE);
 		
+		Product item111 = new Product("Bluetooth Earbuds",11-02-2025,2500,"Boat",false,"BE111","india",
+        ProductType.ELECTRIC_ITEMS,WarrantyYear.ONE);
+		Product item112 = new Product("Gaming Mouse",12-02-2025,1800,"Logitech",false,"GM112","china",
+        ProductType.ELECTRIC_ITEMS,WarrantyYear.TWO);
+		Product item113 = new Product("Office Laptop",13-02-2025,65000,"HP",false,"OL113","usa",
+        ProductType.ELECTRIC_ITEMS,WarrantyYear.THREE);
+		Product item114 = new Product("Formal Shoes",14-02-2025,4200,"Clarks",true,"FS114","uk",
+        ProductType.FOOTWARE,WarrantyYear.TWO);
+		Product item115 = new Product("Denim Jacket",15-02-2025,3500,"Levis",true,"DJ115","usa",
+        ProductType.CLOTH,WarrantyYear.ONE);
+		Product item116 = new Product("Dining Chair",16-02-2025,5500,"UrbanLadder",false,"DC116","india",
+        ProductType.FURNITURE,WarrantyYear.THREE);
+		Product item117 = new Product("Smartphone",17-02-2025,22000,"Realme",false,"SP117","china",
+        ProductType.ELECTRIC_ITEMS,WarrantyYear.TWO);
+		Product item118 = new Product("Travel Backpack",18-02-2025,2800,"Wildcraft",true,"TB118","india",
+        ProductType.ACCESSERIES,WarrantyYear.ONE);
+		Product item119 = new Product("Gold Bracelet",19-02-2025,85000,"Kalyan",false,"GB119","india",
+        ProductType.JEWELLERY,WarrantyYear.FOUR);
+		Product item120 = new Product("Air Fryer",20-02-2025,7000,"Philips",false,"AF120","netherlands",
+        ProductType.ELECTRIC_ITEMS,WarrantyYear.THREE);
+		
+		Product item121 = new Product("Hair Dryer",04-03-2025,2500,"Philips",false,"HD121","netherlands",
+        ProductType.ELECTRIC_ITEMS,WarrantyYear.TWO);
+		Product item122 = new Product("Printer",05-03-2025,9000,"Canon",false,"PR122","japan",
+        ProductType.ELECTRIC_ITEMS,WarrantyYear.THREE);
+		Product item123 = new Product("Desk Lamp",06-03-2025,1200,"Syska",false,"DL123","india",
+        ProductType.ELECTRIC_ITEMS,WarrantyYear.ONE);
+		Product item124 = new Product("Gym Shoes",07-03-2025,4000,"Reebok",true,"GS124","usa",
+        ProductType.FOOTWARE,WarrantyYear.TWO);
+		Product item125 = new Product("Winter Jacket",8-03-2025,5000,"NorthFace",true,"WJ125","usa",
+        ProductType.CLOTH,WarrantyYear.ONE);
+		Product item126 = new Product("Study Desk",9-03-2025,15000,"Godrej",false,"SD126","india",
+        ProductType.FURNITURE,WarrantyYear.THREE);
+		Product item127 = new Product("Mixer Grinder",10-03-2025,6000,"Prestige",false,"MG127","india",
+        ProductType.ELECTRIC_ITEMS,WarrantyYear.THREE);
+		Product item128 = new Product("Smart TV",11-03-2025,55000,"Samsung",false,"TV128","korea",
+        ProductType.ELECTRIC_ITEMS,WarrantyYear.FOUR);
+		Product item129 = new Product("Laptop Bag",12-03-2025,1800,"Skybags",true,"LB129","india",
+        ProductType.ACCESSERIES,WarrantyYear.ONE);
+		Product item130 = new Product("Necklace Set",13-03-2025,95000,"Tanishq",false,"NS130","india",
+        ProductType.JEWELLERY,WarrantyYear.FOUR);
+		Product item131 = new Product("Microwave Oven",14-03-2025,15000,"LG",false,"MO131","korea",
+        ProductType.ELECTRIC_ITEMS,WarrantyYear.THREE);
+		Product item132 = new Product("Sofa Chair",15-03-2025,22000,"UrbanLadder",false,"SC132","india",
+        ProductType.FURNITURE,WarrantyYear.THREE);
+		Product item133 = new Product("Formal Pants",16-03-2025,2000,"PeterEngland",true,"FP133","india",
+        ProductType.CLOTH,WarrantyYear.ONE);
+		Product item134 = new Product("Sports Cap",17-03-2025,800,"Nike",true,"CP134","usa",
+        ProductType.ACCESSERIES,WarrantyYear.ONE);
+		Product item135 = new Product("Gold Chain",18-03-2025,120000,"MalabarGold",false,"GC135","india",
+        ProductType.JEWELLERY,WarrantyYear.FOUR);
+		Product item136 = new Product("Electric Iron",19-03-2025,2200,"Philips",false,"EI136","netherlands",
+        ProductType.ELECTRIC_ITEMS,WarrantyYear.TWO);
+		Product item137 = new Product("Ceiling Light",20-03-2025,1800,"Wipro",false,"CL137","india",
+        ProductType.ELECTRIC_ITEMS,WarrantyYear.TWO);
+		
 		
 		
 		prDetail.save(item10);
@@ -350,6 +406,33 @@ class ProductRunner{
 		prDetail.save(item108);
 		prDetail.save(item109);
 		prDetail.save(item110);
+		prDetail.save(item111);
+		prDetail.save(item112);
+		prDetail.save(item113);
+		prDetail.save(item114);
+		prDetail.save(item115);
+		prDetail.save(item116);
+		prDetail.save(item117);
+		prDetail.save(item118);
+		prDetail.save(item119);
+		prDetail.save(item120);
+		prDetail.save(item121);
+		prDetail.save(item122);
+		prDetail.save(item123);
+		prDetail.save(item124);
+		prDetail.save(item125);
+		prDetail.save(item126);
+		prDetail.save(item127);
+		prDetail.save(item128);
+		prDetail.save(item129);
+		prDetail.save(item130);
+		prDetail.save(item131);
+		prDetail.save(item132);
+		prDetail.save(item133);
+		prDetail.save(item134);
+		prDetail.save(item135);
+		prDetail.save(item136);
+		prDetail.save(item137);
 		
 		System.out.println("================================================");
 		boolean searchId=prDetail.searchByUniqueID("Puma34") ;
@@ -378,5 +461,30 @@ class ProductRunner{
 		System.out.println("================================================");
 		boolean year = prDetail.getAllByWarrantyYear(WarrantyYear.TWO);
 		System.out.println(year);
-	}
+		
+		
+
+       Product[] moreProducts = new Product[10];
+	   moreProducts[0] = new Product("Wireless Charger",21-02-2025,1500,"Mi",false,"WC121","china",
+	   ProductType.ELECTRIC_ITEMS,WarrantyYear.ONE);
+	   moreProducts[1] = new Product("Keyboard",22-02-2025,1200,"HP",false,"KB122","usa",
+	   ProductType.ELECTRIC_ITEMS,WarrantyYear.TWO);
+	   moreProducts[2] = new Product("Office Chair",23-02-2025,7000,"Featherlite",false,"OC123","india",
+	   ProductType.FURNITURE,WarrantyYear.THREE);
+	   moreProducts[3] = new Product("Running Shoes",24-02-2025,4500,"Adidas",true,"RS124","germany",
+	   ProductType.FOOTWARE,WarrantyYear.TWO);
+	   moreProducts[4] = new Product("Hoodie",25-02-2025,2200,"H&M",true,"HD125","sweden",
+	   ProductType.CLOTH,WarrantyYear.ONE);
+	   moreProducts[5] = new Product("Ceiling Fan",26-02-2025,3000,"Usha",false,"CF126","india",
+	   ProductType.ELECTRIC_ITEMS,WarrantyYear.THREE);
+	   moreProducts[6] = new Product("Tablet",27-02-2025,18000,"Lenovo",false,"TB127","china",
+	   ProductType.ELECTRIC_ITEMS,WarrantyYear.TWO);
+	   moreProducts[7] = new Product("Travel Suitcase",28-02-2025,5000,"VIP",true,"TS128","india",
+	   ProductType.ACCESSERIES,WarrantyYear.ONE);
+	   moreProducts[8] = new Product("Diamond Earrings",01-03-2025,120000,"Tanishq",false,"DE129","india",
+	   ProductType.JEWELLERY,WarrantyYear.FOUR);
+	   moreProducts[9] = new Product("Electric Kettle",02-03-2025,1800,"Prestige",false,"EK130","india",
+	   ProductType.ELECTRIC_ITEMS,WarrantyYear.THREE);
+	   prDetail.save(moreProducts);
+}
 }

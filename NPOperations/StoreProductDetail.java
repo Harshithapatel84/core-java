@@ -25,6 +25,26 @@ class StoreProductDetail{
 		}
 	}
 	
+	void save(Product[] products) {
+		System.out.println("Executing save for multiple products...");
+		if (this.products != null && products != null) {
+			for (Product product : products) {
+				if (curtIndex < 10) 
+				{   
+                this.products[curtIndex] = product;
+                this.curtIndex++;
+                product.printInfo();
+                } 
+            else {
+                System.out.println("Cannot store more than 10 products");
+                break;
+                 }
+				}
+		 } else {
+                System.out.println("No products to store");
+            }
+    }
+	
     boolean searchByUniqueID(String prID)
 	{
 		System.out.println("executing the searby UniqueId in product..");
@@ -129,11 +149,11 @@ class StoreProductDetail{
    {
     System.out.println("executing to get the warranty expiration by unique id");
 
-    if(this.products != null && uniqueId != null)
+    if(this.products!=null && uniqueId!=null)
     {
-        for(Product product : this.products)
+        for(Product product:this.products)
         {
-            if(product != null)
+            if(product!=null)
             {
                 if(product.uniqueId == uniqueId)
                 {
@@ -161,7 +181,7 @@ class StoreProductDetail{
         boolean getAllByType(ProductType type)
          {
             System.out.println("executing get all by type...");
-			if(this.products != null && type != null)
+			if(this.products!=null && type!=null)
 			{
 				boolean found=false;
 			    for(Product product:this.products)
@@ -186,17 +206,17 @@ class StoreProductDetail{
 		boolean getAllByWarrantyYear(WarrantyYear year)
 		{
 			System.out.println("executing get all by warranty year...");
-			if(this.products != null && year != null)
+			if(this.products!= null && year!= null)
 			{
-				boolean found = false;
-				for(Product product : this.products)
+				boolean found=false;
+				for(Product product:this.products)
 				{
-                if(product != null)
+                if(product!= null)
 				{
                     if(product.year == year)
                     {
                     product.printInfo();
-                    found = true;
+                    found=true;
                     }
                 }
             }
