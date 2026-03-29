@@ -1,6 +1,7 @@
 class StoreProductDetail{
 	Product[] products;
-	int curtIndex;
+	int curtIndex=0;
+	int presentIndex=0;
 	
 	StoreProductDetail(Product[] products)
 	{
@@ -25,25 +26,30 @@ class StoreProductDetail{
 		}
 	}
 	
-	void save(Product[] products) {
-		System.out.println("Executing save for multiple products...");
-		if (this.products != null && products != null) {
-			for (Product product : products) {
-				if (curtIndex < 10) 
-				{   
-                this.products[curtIndex] = product;
-                this.curtIndex++;
-                product.printInfo();
-                } 
-            else {
-                System.out.println("Cannot store more than 10 products");
-                break;
-                 }
-				}
-		 } else {
-                System.out.println("No products to store");
+	void save(Product[] products) 
+	{
+        System.out.println("Executing save for multiple products...");
+		if (this.products!=null && products!=null) {
+			for (Product product:products) 
+			{
+				if(presentIndex<10) 
+				{
+					if(product!=null) 
+					{
+                    this.products[presentIndex]=product;
+                    this.presentIndex++;
+                    product.printInfo();
+                    }
+				} 
+				else 
+				{
+                System.out.println("Cannot store more 10 product");
+                }
             }
+		} else {
+        System.out.println("products is null cannot store");
     }
+}
 	
     boolean searchByUniqueID(String prID)
 	{

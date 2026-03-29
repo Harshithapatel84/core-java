@@ -25,6 +25,7 @@ class ProductRunner{
 		Product item8 = new Product("Air cooler",28-06-26,35000,"Ambhasutha",false,"A10","USA",
 		ProductType.ELECTRIC_ITEMS,WarrantyYear.TWO);
 		
+		
 		prDetail.save(item);
 		prDetail.save(item1);
 		prDetail.save(item2);
@@ -464,7 +465,7 @@ class ProductRunner{
 		
 		
 
-       Product[] moreProducts = new Product[10];
+       Product[] moreProducts = new Product[11];
 	   moreProducts[0] = new Product("Wireless Charger",21-02-2025,1500,"Mi",false,"WC121","china",
 	   ProductType.ELECTRIC_ITEMS,WarrantyYear.ONE);
 	   moreProducts[1] = new Product("Keyboard",22-02-2025,1200,"HP",false,"KB122","usa",
@@ -486,5 +487,7 @@ class ProductRunner{
 	   moreProducts[9] = new Product("Electric Kettle",02-03-2025,1800,"Prestige",false,"EK130","india",
 	   ProductType.ELECTRIC_ITEMS,WarrantyYear.THREE);
 	   prDetail.save(moreProducts);
+	   moreProducts[10] = new Product("Diamond Earrings",01-03-2025,120000,"Tanishq",false,"DE129","india",
+	   ProductType.JEWELLERY,WarrantyYear.FOUR);
 }
 }
