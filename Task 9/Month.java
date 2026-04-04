@@ -1,4 +1,0 @@
-enum Month
-{
-	JANUARY,FEBRUARY,MARCH,APRIL
-}

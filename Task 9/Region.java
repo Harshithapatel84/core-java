@@ -1,3 +1,0 @@
-enum Region{
-	NORTH,SOUTH,EAST,WEST
-}

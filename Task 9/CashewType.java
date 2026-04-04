@@ -1,4 +1,0 @@
-enum CashewType
-{
-	RAW,ROASTED,SALTED,SWEET
-}

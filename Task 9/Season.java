@@ -1,4 +1,0 @@
-enum Season
-{
-	JANUARY,FEBRUARY,MARCH,APRIL
-}
