@@ -20,6 +20,8 @@
       <change afterPath="$PROJECT_DIR$/src/com/prg/Forest/mall/Shop.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/com/prg/Forest/mall/ShopRunner.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/com/prg/Forest/mall/storeShopDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../April/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../April/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../April/src/com/dev/elevator/MoveRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/../April/src/com/dev/elevator/MoveRunner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +53,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/WIN/Desktop/core-java/prg3",
     "vue.rearranger.settings.migration": "true"
@@ -107,34 +109,11 @@
       <option name="presentableId" value="Default" />
       <updated>1775542472965</updated>
       <workItem from="1775542475635" duration="371000" />
-      <workItem from="1775578107697" duration="10252000" />
+      <workItem from="1775578107697" duration="9438000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="origin/operation" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
 </project>
