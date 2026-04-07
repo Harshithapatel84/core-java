@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fd1df87d-c504-4378-88e7-861c3db6b44f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prg3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/prg/Forest/Jungle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/prg/Forest/card/PanCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/prg/Forest/card/StorePanCardDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/prg/Forest/doll/Toy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/prg/Forest/doll/ToyDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/prg/Forest/groceryItem/Grocery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/prg/Forest/groceryItem/StroreGroceryItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/prg/Forest/hospital/Medical.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/prg/Forest/hospital/MedicalDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/prg/Forest/mall/Shop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/prg/Forest/mall/ShopRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/prg/Forest/mall/storeShopDetail.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="3C19z3R6f1T4uxVwpWI0yzX0Wue" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Jungle.executor": "Run",
+    "Application.ShopRunner.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/WIN/Desktop/core-java/prg3",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.ShopRunner">
+    <configuration name="Jungle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.prg.Forest.Jungle" />
+      <module name="prg3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.prg.Forest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShopRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.prg.Forest.mall.ShopRunner" />
+      <module name="prg3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.prg.Forest.mall.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ShopRunner" />
+        <item itemvalue="Application.Jungle" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.30387.90" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.30387.90" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fd1df87d-c504-4378-88e7-861c3db6b44f" name="Changes" comment="" />
+      <created>1775542472965</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1775542472965</updated>
+      <workItem from="1775542475635" duration="371000" />
+      <workItem from="1775578107697" duration="10252000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/operation" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
