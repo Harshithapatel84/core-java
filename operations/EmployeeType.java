@@ -1,3 +1,0 @@
-enum EmployeeType{
-	SOFTWARE_ENGINEER,WORKER,DRIVER
-}
