@@ -6,9 +6,16 @@ public interface Market {
     String location = "Bangalore";
 
     void openMarket();
+    void business();
+    void inf0();
 
-    default void displayItems() {
+    default void displayItems()
+    {
         System.out.println("Market displays fruits, vegetables, and flowers");
+    }
+    default  void close()
+    {
+        System.out.println("market is closed");
     }
 
     static void marketInfo() {

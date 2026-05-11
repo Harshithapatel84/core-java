@@ -10,7 +10,14 @@ public class MarketImpl implements Market {
     }
 
     @Override
-    public void displayItems() {
-        System.out.println("Market sells fruits, vegetables, and flowers");
+    public void business() {
+        System.out.println("to do business");
     }
+
+    @Override
+    public void inf0() {
+        System.out.println("execute the market info");
+    }
+
+
 }

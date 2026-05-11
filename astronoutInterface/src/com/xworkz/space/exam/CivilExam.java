@@ -8,4 +8,16 @@ public interface CivilExam {
     void prepare();
     void writeExam();
 
+    default void  write(){
+        System.out.println("write the exam");
+    }
+     default void read()
+    {
+        System.out.println("read for exam");
+    }
+    static void examInfo()
+    {
+        System.out.println("executing the exam type with information");
+    }
+
 }

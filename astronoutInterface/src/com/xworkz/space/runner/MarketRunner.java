@@ -11,10 +11,14 @@ public class MarketRunner {
     public static void main(String[] args) {
 
         Market market = new MarketImpl();
+        Object object=new MarketImpl();
+        MarketImpl mrimpl=new MarketImpl();
 
         market.openMarket();
-
+        market.inf0();
         market.displayItems();
+        market.close();
+        market.business();
 
         Market.marketInfo();
 
@@ -23,11 +27,13 @@ public class MarketRunner {
 
         System.out.println("=================================================");
 
-        Train obj = new TrainImpl();
-        obj.start();
-        obj.accelerate();
-        obj.brake();
-        obj.stop();
+        Train train = new TrainImpl();
+        train.start();
+        train.accelerate();
+        train.brake();
+        train.stop();
+        train.move();
+
         Train.trackType();
 
         System.out.println(Train.name);
@@ -40,7 +46,9 @@ public class MarketRunner {
         elevator.closeDoor();
         elevator.openDoor();
         elevator.safety();
+        elevator.run();
         Elevator.type();
+
 
         System.out.println(Elevator.brand);
         System.out.println(Elevator.capacity);

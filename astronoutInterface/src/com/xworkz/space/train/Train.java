@@ -13,6 +13,10 @@ public interface Train {
     default void stop() {
         System.out.println("Train stops at stations");
     }
+    default void move()
+    {
+        System.out.println("execute the movement of the train");
+    }
 
     static void trackType() {
         System.out.println("Runs on railway tracks");

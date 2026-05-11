@@ -2,6 +2,8 @@ package com.xworkz.space.runner;
 
 import com.xworkz.space.apartment.Apartment;
 import com.xworkz.space.apartment.impl.ApartmentImpl;
+import com.xworkz.space.cloud.Cloud;
+import com.xworkz.space.cloud.impl.CloudImpl;
 import com.xworkz.space.exam.CivilExam;
 import com.xworkz.space.exam.impl.CivilExamImpl;
 import com.xworkz.space.license.License;
@@ -16,6 +18,7 @@ public class EarthRunner {
         earth.revolve();
         earth.supportLife();
         earth.action();
+        earth.live();
         Earth.printInfo();
         System.out.println("distance ffro moon:"+Earth.distanceFromMoon);
         System.out.println("earth occupies"+Earth.order+"position");
@@ -39,6 +42,7 @@ public class EarthRunner {
         obj.buy();
         obj.maintain();
         obj.facilities();
+        obj.occupy();
         Apartment.locationInfo();
 
         System.out.println(Apartment.name);
@@ -51,8 +55,22 @@ public class EarthRunner {
         exam.apply();
         exam.prepare();
         exam.writeExam();
+        exam.write();
+        exam.read();
+        CivilExam.examInfo();
         System.out.println("Exam Name: " + CivilExam.examName);
         System.out.println("Attempts Allowed: " + CivilExam.attempts);
+
+        Cloud cloud=new CloudImpl();
+        cloud.rain();
+        cloud.smooky();
+        cloud.sky();
+        cloud.climate();
+        cloud.shade();
+        Cloud.info();
+        System.out.println("cloud color:"+Cloud.color);
+        System.out.println("cloud layers:"+Cloud.layer);
+        System.out.println("cloud height:"+Cloud.height);
 
 
 

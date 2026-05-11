@@ -17,6 +17,7 @@ public class MountainRunner {
         mountain.explore();
 
         mountain.showDetails();
+        mountain.view();
 
         Mountain.mountainInfo();
 
