@@ -7,7 +7,14 @@ public class KmfDetailserviceImpl implements KmfDetailservice {
 
     @Override
     public boolean validateAndSave(KmfDetailDTO detailDTO) {
-        System.out.println("entering data:"+detailDTO);
+        System.out.println("validate and save data:"+detailDTO);
+        if(detailDTO.getMilkType()!=null && detailDTO.getMilkType().length()>=7 && detailDTO.getMilkType().length()<=70)
+        {
+            System.out.println("valid ");
+        }
+        else {
+            System.out.println("invalid");
+        }
         return false;
     }
 }
