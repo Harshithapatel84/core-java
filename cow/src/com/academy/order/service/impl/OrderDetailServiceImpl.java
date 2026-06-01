@@ -1,9 +1,15 @@
 package com.academy.order.service.impl;
 
+import com.academy.order.dao.OrderDetailDAO;
 import com.academy.order.dto.OrderDetailDTO;
 import com.academy.order.service.OrderDetailService;
 
 public class OrderDetailServiceImpl implements OrderDetailService {
+    private OrderDetailDAO orderDetailDAO;
+    public OrderDetailServiceImpl(OrderDetailDAO orderDetailDAO)
+    {
+        this.orderDetailDAO=orderDetailDAO;
+    }
     @Override
     public boolean validateAndSaqve(OrderDetailDTO detailDTO) {
         System.out.println("validate and save data :"+detailDTO);
@@ -21,6 +27,12 @@ public class OrderDetailServiceImpl implements OrderDetailService {
         }
         else {
             System.out.println("invalid");
+        }
+        if(this.orderDetailDAO!=null)
+        {
+            System.out.println("order detail in not null...");
+            System.out.println("save the details....");
+            this.orderDetailDAO.save(detailDTO);
         }
         return false;
     }
