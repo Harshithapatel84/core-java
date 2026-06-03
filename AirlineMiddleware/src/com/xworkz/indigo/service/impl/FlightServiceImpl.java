@@ -11,17 +11,22 @@ public class FlightServiceImpl implements FlightService {
         this.flightDetailDAO=flightDetailDAO;
     }
     @Override
-    public boolean validateAndSave(FlightDetailDTO detailDTO) {
+    public boolean validateAndSearch(FlightDetailDTO detailDTO) {
         if(this.flightDetailDAO!=null)
         {
             System.out.println("flight is not null...");
-            this.flightDetailDAO.search(detailDTO);
-            return true;
         }
         else {
             System.out.println("detail is null,cannot search");
+            return false;
         }
-
-        return false;
+        if(detailDTO!=null)
+        {
+            System.out.println("flight dto is not null");
+        }
+        else {
+            System.out.println("dto is null");
+        }
+        return flightDetailDAO.search(detailDTO);
     }
 }

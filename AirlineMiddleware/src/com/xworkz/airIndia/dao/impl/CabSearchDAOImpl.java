@@ -6,11 +6,8 @@ import com.xworkz.airIndia.dto.CabSearchDTO;
 public class CabSearchDAOImpl implements CabSearchDAO {
     @Override
     public boolean search(CabSearchDTO searchDTO) {
-        System.out.println("searching cab..");
-        if(searchDTO!=null)
-        {
-            System.out.println("dto is not null");
-        }
-        return false;
+        System.out.println("searching cab..:"+searchDTO);
+
+        return true;
     }
 }

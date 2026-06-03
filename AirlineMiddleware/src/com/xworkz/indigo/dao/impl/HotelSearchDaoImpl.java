@@ -6,7 +6,7 @@ import com.xworkz.indigo.dto.HotelSearchDTO;
 public class HotelSearchDaoImpl implements HotelSearchDAO {
     @Override
     public boolean search(HotelSearchDTO detailDto) {
-        System.out.println("searching hotekl...");
-        return false;
+        System.out.println("searching hotekl...:"+detailDto);
+        return true;
     }
 }

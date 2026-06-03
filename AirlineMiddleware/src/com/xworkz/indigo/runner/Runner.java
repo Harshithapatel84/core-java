@@ -21,12 +21,12 @@ public class Runner {
         FlightDetailDAO flightDetailDAO=new FlightDetailDaoImpl();
         FlightDetailDTO flightDetailDTO=new FlightDetailDTO();
         FlightService flightService=new FlightServiceImpl(flightDetailDAO);
-        flightService.validateAndSave(flightDetailDTO);
+        flightService.validateAndSearch(flightDetailDTO);
 
         HotelSearchDAO hotelSearchDAO=new HotelSearchDaoImpl();
         HotelSearchDTO hotelSearchDTO=new HotelSearchDTO();
         HotelService hotelService=new HotelServiceImpl(hotelSearchDAO);
-        boolean store=hotelService.validatAndSave(hotelSearchDTO);
+        boolean store=hotelService.validatAndSearch(hotelSearchDTO);
         System.out.println("search:"+store);
 
         SearchSightDAO searchSightDAO=new SearchSightDaoImpl();

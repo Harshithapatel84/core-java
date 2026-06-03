@@ -11,6 +11,6 @@ public class Runner {
         CabSearchDAO cabSearchDAO=new CabSearchDAOImpl();
         CabSearchDTO cabSearchDTO=new CabSearchDTO();
         CabSearchService cabSearchService=new CabSearchServiceImpl(cabSearchDAO);
-        cabSearchService.validateAndSave(cabSearchDTO);
+        cabSearchService.validateAndSearch(cabSearchDTO);
     }
 }

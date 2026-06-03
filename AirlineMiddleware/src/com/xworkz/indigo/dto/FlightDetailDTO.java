@@ -13,11 +13,11 @@ import java.time.LocalDate;
 @ToString
 @EqualsAndHashCode
 
-public class FlightDetailDTO implements Serializable {
+public class FlightDetailDTO  {
 
     private TripType tripType;
-    private String fromaddress;
-    private String toAddress;
+    private String from;
+    private String to;
     private LocalDate departure;
     private Integer noOfPassenger;
 
