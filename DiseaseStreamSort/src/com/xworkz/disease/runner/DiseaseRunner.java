@@ -3,7 +3,9 @@ package com.xworkz.disease.runner;
 import com.xworkz.disease.dto.DiseaseDTO;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class DiseaseRunner {
     public static void main(String[] args) {
@@ -80,6 +82,171 @@ public class DiseaseRunner {
         System.out.println("--------------------------------");
 
         diseaseDTOS.stream().map(diseaseDTO -> diseaseDTO.getName().toLowerCase()).forEach(System.out::println);
+
+        System.out.println("--------------------------------");
+
+        diseaseDTOS.stream()
+                .map(diseaseDTO -> diseaseDTO.getName().length())
+                .forEach(System.out::println);
+
+        System.out.println("--------------------------------");
+
+        diseaseDTOS.stream()
+                .filter(diseaseDTO -> diseaseDTO.getId() > 10)
+                .map(diseaseDTO -> diseaseDTO.getId() * 2)
+                .forEach(System.out::println);
+
+        System.out.println("--------------------------------");
+
+        diseaseDTOS.stream()
+                .filter(diseaseDTO -> diseaseDTO.getName().startsWith("A"))
+                .filter(diseaseDTO -> diseaseDTO.getName().length() > 5)
+                .forEach(System.out::println);
+
+        System.out.println("-----------------------------------------------------");
+
+        diseaseDTOS.stream()
+                .map(diseaseDTO -> diseaseDTO.getDescription())
+                .forEach(System.out::println);
+
+        System.out.println("-----------------------------------------------------");
+
+        diseaseDTOS.stream()
+                .map(diseaseDTO -> diseaseDTO.getCure().startsWith("M"))
+                .forEach(System.out::println);
+
+        System.out.println("--------------------------------");
+
+        diseaseDTOS.stream()
+                .map(diseaseDTO->diseaseDTO.getSymptoms())
+                .sorted()
+                .forEach(System.out::println);
+
+        System.out.println("--------------------------------");
+
+        diseaseDTOS.stream()
+                .sorted((p1, p2) -> p2.getPrevention().compareTo(p1.getPrevention()))
+                .forEach(System.out::println);
+
+        System.out.println("--------------------------------");
+
+        diseaseDTOS.stream()
+                .sorted((d1, d2) -> d1.getName().compareTo(d2.getName()))
+                .forEach(System.out::println);
+
+        System.out.println("--------------------------------");
+
+        diseaseDTOS.stream()
+                .sorted((d1, d2) -> {
+                    int result = d1.getCause().compareTo(d2.getCause());
+                    if (result == 0) {
+                        return d1.getName().compareTo(d2.getName());
+                    }
+                    return result;
+                })
+                .forEach(System.out::println);
+
+        System.out.println("--------------------------------");
+
+        diseaseDTOS.stream()
+                .filter(diseaseDTO -> diseaseDTO.getTreatment() != null)
+                .sorted((d1, d2) -> d1.getTreatment().compareTo(d2.getTreatment()))
+                .forEach(System.out::println);
+
+        System.out.println("--------------------------------");
+
+        diseaseDTOS.stream()
+                .sorted((d1, d2) -> d2.getPrevention().compareTo(d1.getPrevention()))
+                .forEach(System.out::println);
+
+        System.out.println("--------------------------------");
+
+        diseaseDTOS.stream()
+                .map(diseaseDTO -> diseaseDTO.getName())
+                .sorted((s1, s2) -> s1.length() - s2.length())
+                .forEach(System.out::println);
+
+        System.out.println("--------------------------------");
+
+        diseaseDTOS.stream()
+                .map(diseaseDTO -> diseaseDTO.getName())
+                .sorted((s1, s2) -> s1.compareToIgnoreCase(s2))
+                .forEach(System.out::println);
+
+        System.out.println("--------------------------------");
+
+        diseaseDTOS.stream()
+                .sorted((d1, d2) -> d1.getDescription().length() - d2.getDescription().length())
+                .forEach(System.out::println);
+
+        System.out.println("--------------------------------");
+
+        ArrayList<String> list = diseaseDTOS.stream()
+                .map(diseaseDTO -> diseaseDTO.getName())
+                .collect(Collectors.toCollection(() -> new ArrayList<>()));
+
+        System.out.println(list);
+
+        System.out.println("--------------------------------");
+
+        HashSet<String> set = diseaseDTOS.stream()
+                .map(diseaseDTO -> diseaseDTO.getName())
+                .collect(Collectors.toCollection(() -> new HashSet<>()));
+
+        System.out.println(set);
+
+        System.out.println("--------------------------------");
+
+        System.out.println(
+                diseaseDTOS.stream()
+                        .noneMatch(diseaseDTO -> diseaseDTO.getName().startsWith("Z")));
+
+        System.out.println("--------------------------------");
+
+        System.out.println(
+                diseaseDTOS.stream().anyMatch(diseaseDTO -> diseaseDTO.getCause().startsWith("V")));
+
+        System.out.println("--------------------------------");
+
+        System.out.println(
+                diseaseDTOS.stream().allMatch(diseaseDTO -> diseaseDTO.getId() > 0));
+
+        System.out.println("--------------------------------");
+
+        System.out.println(
+                diseaseDTOS.stream().findFirst());
+
+        System.out.println("--------------------------------");
+
+        System.out.println(
+                diseaseDTOS.parallelStream().findAny());
+
+        System.out.println("--------------------------------");
+
+        diseaseDTOS.stream()
+                .map(diseaseDTO -> diseaseDTO.getCause())
+                .distinct()
+                .forEach(System.out::println);
+
+        System.out.println("--------------------------------");
+
+        diseaseDTOS.stream()
+                .limit(5)
+                .forEach(System.out::println);
+
+        System.out.println("--------------------------------");
+
+        diseaseDTOS.stream()
+                .skip(10)
+                .limit(5)
+                .forEach(System.out::println);
+
+        System.out.println("--------------------------------");
+
+
+
+
+
 
 
 
