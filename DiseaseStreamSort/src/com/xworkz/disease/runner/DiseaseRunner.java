@@ -302,6 +302,19 @@ public class DiseaseRunner {
 
         System.out.println("--------------------------------");
 
+        diseaseDTOS.stream()
+                .sorted((d1, d2) -> d1.getName().compareTo(d2.getName()))
+                .forEach(System.out::println);
+
+        System.out.println("--------------------------------");
+
+        diseaseDTOS.stream()
+                .filter(diseaseDTO -> diseaseDTO.getName().length() > 5)
+                .map(diseaseDTO -> diseaseDTO.getName())
+                .sorted((s1, s2) -> s1.compareTo(s2))
+                .forEach(System.out::println);
+
+
 
 
 
