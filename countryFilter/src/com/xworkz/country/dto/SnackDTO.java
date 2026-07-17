@@ -15,8 +15,8 @@ public class SnackDTO implements Serializable,Comparable<SnackDTO> {
 
     private String name;
     private String flavor;
-    private double weight;
-    private double price;
+    private Double weight;
+    private Double price;
 
     @Override
     public int compareTo(SnackDTO o) {
