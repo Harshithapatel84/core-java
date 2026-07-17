@@ -41,6 +41,6 @@ public class SetRunner {
         countryDTOS.forEach(System.out::println);
         boolean present= countryDTOS.contains(new CountryDTO("Japan", 81, "Naruhito", "Shigeru Ishiba"));
         System.out.println("present:"+present);
-        
+
     }
 }
